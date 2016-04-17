@@ -12,7 +12,7 @@
 	<!-- Normalize -->
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<!-- Bootstrap -->
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 	<!-- Owl -->
 	<link rel="stylesheet" type="text/css" href="css/owl.css">
 	<!-- Animate.css -->
@@ -127,9 +127,9 @@
 		<a href="#" class="close-link"><i class="arrow_up"></i></a>
 	</div>
 	<!-- Scripts -->
-	<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
 	<script src="js/owl.carousel.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 	<script src="js/wow.min.js"></script>
 	<script src="js/typewriter.js"></script>
 	<script src="js/jquery.onepagenav.js"></script>
