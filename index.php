@@ -76,10 +76,10 @@
 				<h4 class="light muted">Enter Username to Invite to your Repository</h4>
 			</div>
 			<div class="forms" id="form2">
-				<form action="email.php" method="POST">
-					<input type="text" name="repository" placeholder="Github Repository">
-					<input type="text" name="username" placeholder="Github Username">
-					<input type="submit" value="Invite">
+				<form action="home.php" method="POST">
+					<input type="text" name="username" class="userfield" placeholder="Github Username">
+<!-- 					<input type="text" name="username" placeholder="Github Username">
+ -->					<input type="submit" class="btn btn-blue" value="Invite">
 				</form>
 			</div>
 		</div>
