@@ -75,8 +75,8 @@
 				<h2>Invite</h2>
 				<h4 class="light muted">Enter Username to Invite to your Repository</h4>
 			</div>
-			<div class="forms">
-				<form method="POST" action="formapi.php">
+			<div class="forms" id="form2">
+				<form action="formapi.php" method="POST">
 					<input type="text" name="username" placeholder="Github Username">
 					<input type="submit" value="Invite">
 				</form>
@@ -127,7 +127,9 @@
 		<a href="#" class="close-link"><i class="arrow_up"></i></a>
 	</div>
 	<!-- Scripts -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
+	
+	</script>
+	<script src="https://code.jquery.com/jquery-2.2.3.js"></script>
 	<script src="js/owl.carousel.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 	<script src="js/wow.min.js"></script>
