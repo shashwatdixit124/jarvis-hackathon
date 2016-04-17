@@ -78,8 +78,9 @@
 			<div class="forms" id="form2">
 				<form action="home.php" method="POST">
 					<input type="text" name="username" class="userfield" placeholder="Github Username">
+					<input type="hidden" value="getRepoValue()" name="repoSent">
 <!-- 					<input type="text" name="username" placeholder="Github Username">
- -->					<input type="submit" class="btn btn-blue" value="Invite">
+-->					<input type="submit" class="btn btn-blue" value="Invite">
 				</form>
 			</div>
 		</div>

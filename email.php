@@ -40,5 +40,6 @@ curl_close($session);
 // print everything out
 print_r($response);
 
+header('Location : home.php');
 ?>
 

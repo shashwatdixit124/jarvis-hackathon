@@ -1,5 +1,5 @@
 <?php
-	$repository = $_POST['repository'];
+	$repository = $_POST['repoSent'];
 	$username = $_POST['username'];
 	$url = "https://api.github.com/users/".$username."/events/public";
 	//$json = file_get_contents($url);
