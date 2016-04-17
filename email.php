@@ -1,15 +1,16 @@
 <?php
+session_start();
 include 'formapi.php';
 
 $url = 'https://api.sendgrid.com/';
-
+$repository = $_POST['repoSent'];
 $params = array(
     'api_user'  => "jainadi011",
     'api_key'   => "vishal9212",
     'to'        => $emailid,
     'subject'   => 'Invited to Repository',
-    'html'      => $username.' wants to invite you to the Repository '.$repository."\n\n".'http://github.com/'.$username.'/'.$repository,
-    'text'      => $username.' wants to invite you to the Repository '.$repository."\n\n".'http://github.com/'.$username.'/'.$repository,
+    'html'      => $_SESSION['username'].' wants to invite you to the Repository '.$repository."\n\n".'http://github.com/'.$_SESSION['username'].'/'.$repository,
+    'text'      => $_SESSION['username'].' wants to invite you to the Repository '.$repository."\n\n".'http://github.com/'.$_SESSION['username'].'/'.$repository,
     'from'      => 'no-reply-Jarvis@mycoolie.com'
   );
 
