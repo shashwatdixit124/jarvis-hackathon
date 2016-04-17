@@ -1,20 +1,16 @@
 <?php
+include 'formapi.php';
 
 $url = 'https://api.sendgrid.com/';
-$user = 'USERNAME';
-$pass = 'PASSWORD';
-
-$fileName = 'myfile';
-$filePath = dirname(__FILE__);
 
 $params = array(
     'api_user'  => "jainadi011",
     'api_key'   => "vishal9212",
-    'to'        => 'shashwatdixit124@gmail.com',
-    'subject'   => 'test of file sends',
-    'html'      => '<p> the HTML </p>',
-    'text'      => 'the plain text',
-    'from'      => 'no-reply@mycoolie.com'
+    'to'        => $emailid,
+    'subject'   => 'Invited to Repository',
+    'html'      => $username.' wants to invite you to the Repository '.$repository."\n\n".'http://github.com/'.$username.'/'.$repository,
+    'text'      => $username.' wants to invite you to the Repository '.$repository."\n\n".'http://github.com/'.$username.'/'.$repository,
+    'from'      => 'no-reply-Jarvis@mycoolie.com'
   );
 
 print_r($params);
@@ -45,3 +41,4 @@ curl_close($session);
 print_r($response);
 
 ?>
+
