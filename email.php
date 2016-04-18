@@ -35,7 +35,7 @@ curl_setopt($session, CURLOPT_USERAGENT,'Mozilla/5.0 (Windows; U; Windows NT 5.1
 // obtain response
 $response = curl_exec($session);
 curl_close($session);
-
-header('Location : home.php');
+echo $response;
+header('location : ./home.php');
 ?>
 
