@@ -84,7 +84,7 @@
 										'<h5 class="white heading hide-hover">Repository Id :'.$data[$i]["id"].'</h5>'.
 										'<div class="bottom">'.
 											'<h4 class="white heading small-heading no-margin regular">'.$data[$i]["name"].'</h4>'.
-											'<a href="#" onClick="setValue('.$data[$i]["name"].')" data-toggle="modal" data-target="#invitemodal" class="btn btn-white-fill expand">Invite</a>'.
+											'<a href="#"  onClick="getValue(\''.$data[$i]["name"].'\')" data-toggle="modal" data-target="#invitemodal" class="btn btn-white-fill expand">Invite</a>'.
 										'</div>'.
 									'</div>'.
 								'</div>';
@@ -110,7 +110,7 @@
 		        	<label for="user-name">Username : </label>
 					<input type="text" id="user-name" required class="form-control" name="sendto" placeholder="  Username">
 					<label for="user-name">Repo : </label>
-					<input type="text" id="text" required class="form-control" name="repoSent" placeholder="  Repository">
+					<input type="text" id="hiddenvalue" required class="form-control" name="repoSent" placeholder="  Repository">
 			<p id="para"></p>	
  				</div>
 				<br>
@@ -168,13 +168,15 @@
 	<!-- Scripts -->
 	
 	<script>
-	function setValue(name)
-	{
-		console.log(name);
-		document.getElementById('para').innerHtml = name;
-		console.log(document.getElementById('para').value);
-	}
-	</script>
+    
+    function getValue(value)
+    {
+        document.getElementById("hiddenvalue").value = value;
+        console.log(value);
+    }
+    
+    
+    </script>
 	<script src="https://code.jquery.com/jquery-2.2.3.js"></script>
 	<script src="js/owl.carousel.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
