@@ -14,8 +14,6 @@ $params = array(
     'from'      => 'no-reply-Jarvis@mycoolie.com'
   );
 
-print_r($params);
-
 $request =  $url.'api/mail.send.json';
 
 // Generate curl request
@@ -37,9 +35,6 @@ curl_setopt($session, CURLOPT_USERAGENT,'Mozilla/5.0 (Windows; U; Windows NT 5.1
 // obtain response
 $response = curl_exec($session);
 curl_close($session);
-
-// print everything out
-print_r($response);
 
 header('Location : home.php');
 ?>

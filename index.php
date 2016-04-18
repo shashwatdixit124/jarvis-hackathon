@@ -46,7 +46,6 @@
 					<li><a href="#intro">Home</a></li>
 					<li><a href="#services">Invite</a></li>
 					<li><a href="#team">About</a></li>
-					<li><a href="#" data-toggle="modal" data-target="#modal1" class="btn btn-blue">Sign In</a></li>
 				</ul>
 			</div>
 			<!-- /.navbar-collapse -->
@@ -77,10 +76,8 @@
 			</div>
 			<div class="forms" id="form2">
 				<form action="home.php" method="POST">
-					<input type="text" name="username" class="userfield" placeholder="Github Username">
-					<input type="hidden" value="getRepoValue()" name="repoSent">
-<!-- 					<input type="text" name="username" placeholder="Github Username">
--->					<input type="submit" class="btn btn-blue" value="Invite">
+					<input type="text" name="username" class="form-control" placeholder="Github Username"><br>
+					<input type="submit"  class="btn btn-blue" value="Show Repo">
 				</form>
 			</div>
 		</div>
