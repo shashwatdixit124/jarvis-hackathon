@@ -59,6 +59,7 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
+					<a class="navbar-brand" href="#">github.com/<?php echo $username; ?></a>
 				</button>
 			</div>
 			<!-- Collect the nav links, forms, and other content for toggling -->

@@ -39,6 +39,7 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
+				<a class="navbar-brand" href="#">Jarvis</a>
 			</div>
 			<!-- Collect the nav links, forms, and other content for toggling -->
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -72,12 +73,12 @@
 		<div class="container">
 			<div class="row text-center title">
 				<h2>Invite</h2>
-				<h4 class="light muted">Enter Username to Invite to your Repository</h4>
+				<h4 class="light muted">Enter Your Username</h4>
 			</div>
-			<div class="forms" id="form2">
+			<div class="forms text-center" id="form2">
 				<form action="home.php" method="POST">
-					<input type="text" name="username" class="form-control" placeholder="Github Username"><br>
-					<input type="submit"  class="btn btn-blue" value="Show Repo">
+					<input type="text" name="username" required class="form-control" placeholder="Github Username"><br>
+					<input type="submit"  class="btn btn-blue btn-block" value="Show Repo">
 				</form>
 			</div>
 		</div>
